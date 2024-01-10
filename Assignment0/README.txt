@@ -9,6 +9,6 @@
     - https://paint.toys/ hads a few ads which is always annoying but besides that, very simple set up with clickable links that take you to a fun painting drawing board. Great layout because it fits your screen no matter what.
     - https://ethereum.org/en one of my favorite websites, it is almost perfect. With the option to view in light or dark mode to the easy to use drop down menus, makes the site easy to use and quickly access information. It also has multiple langauge options which is helpful.
     - https://us.shein.com this is a shopping website which is too overwhelming and seems a bit sketch. It has many flashing ads of pictures of clothes. There is so many clothes options you can access. Also, when running on my laptop. the site will crash with the error memory overload. Less going on would improve the site and their memory leaks. 
-6.
-7.
-8. 
+6. Done.
+7. Okay.
+8. Done.
