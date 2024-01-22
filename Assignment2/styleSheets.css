@@ -1,7 +1,9 @@
 /* CSS basics 
 later styles(last rule to apply) overwrite previous styles */
 table, th, td {
-    border: 1px solid black;
+    border-collapse: collapse; /* to not have double borders*/
+    border: 2px solid black;
+    border-color: rgb(14, 86, 25); /* this loads */
     margin: 5px; /* outside border box*/
   }
 
@@ -16,10 +18,19 @@ li {
     border-color: black;
 }
 
+.ol_class>li {
+    font-weight: bold;
+}
+
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 110%; /* normal size*/
     line-height: 90%; /* lines are closer together*/
+}
+
+dl {
+    font-variant: small-caps; /* all caps, looks cool!!*/
+    text-decoration: overline; /* lines on top of dl tag*/
 }
 
 .header-container {
@@ -27,6 +38,21 @@ p {
     border-style: solid;
     border-color: black;
     background-color: rgb(66, 210, 80);
+    font-style: oblique;
+    text-align: center;
+    margin: 0px;
+}
+
+#img_id {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+a[target="_bottom"] {
+    background-color: pink;
+    font: 10px Arial, sans-serif;
 }
 
 /* order matters 
