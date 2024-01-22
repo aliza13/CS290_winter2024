@@ -1,0 +1,44 @@
+/* CSS basics 
+later styles(last rule to apply) overwrite previous styles */
+table, th, td {
+    border: 1px solid black;
+    margin: 5px; /* outside border box*/
+  }
+
+td {
+    padding: 10px;
+}
+
+li {
+    width: 50%; /* of page */
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%; /* normal size*/
+    line-height: 90%; /* lines are closer together*/
+}
+
+.header-container {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(66, 210, 80);
+}
+
+/* order matters 
+hover at bottom */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: rgb(76, 8, 19);
+}
+
+a:hover {
+    color: red;
+}
