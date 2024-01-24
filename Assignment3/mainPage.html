@@ -7,37 +7,28 @@
         <link rel="stylesheet" href="styleSheets.css">
     </head>
     <body>
-        <img id="img_id" src="..\Assignment1\minecraft-logo-clipart-modern-1.png" alt="Minecraft Logo" width="300" height="200">
+        <a href="https://www.minecraft.net/en-us" target="_blank"> <!-- target="_blank" opens link in new tab -->
+        <img id="logo-id" src="minecraft-logo-clipart-modern-1NoBackground.jpg" alt="Minecraft Logo" width="300" height="200">
+        </a>
         <h2 class="header-container">A guide for Minecraft</h2>
-        <div class="head-bar">
-            <div class="nav-bar">
-                <div class="home"><a href="#">Home</a></div>
-                <div class="ingredients"><a href="#">Ingredients</a></div>
-                <div class="potion-table"><a href="#">Potion Table</a></div>
-                <div class="other"><a href="#">Other</a></div>
-            </div>
+        <ul class="nav-bar">
+            <li class="nav-tab"><a href="mainPage.html" class="nav-tab-link">Home</a></li>
+            <li class="nav-tab"><a href="ingredientsPage.html" class="nav-tab-link">Ingredients</a></li>
+            <li class="nav-tab"><a href="#" class="nav-tab-link">Potion Table</a></li>
+            <li class="nav-tab"><a href="#" class="nav-tab-link">Other</a></li>
+            <li class="nav-search">
+                <input type="text" placeholder="Search Bar here" class="search-input">
+                <button class="search-button">Search</button>
+            </li>
+        </ul>
+        <div class="dl-container">
+            <dl>
+                <dt>Glow Stone</dt>
+                <dd>- can add to potion to make it stronger</dd>
+                <dt>Red Stone</dt>
+                <dd>- can add to potion to make it longer</dd>
+            </dl>
         </div>
-        <a role="button" href="https://www.minecraft.net/en-us">Link to Minecraft site</a>
-        <a target="_bottom" href="#bottom">Bottom of page</a>
-        <ol class="ol_class">
-            <li>Items you need to get started with crafting potions</li>        
-                <ul>
-                    <li>Brewing Stand - 3 cobblestone blocks, one blazing rod</li>
-                    <li>Water Bottle - glass and water</li>
-                </ul>
-            <li>Items able to go in potions</li>
-            <ul>
-                <li>Magma cream</li>
-                <li>Puffer fish</li>
-            </ul>
-        </ol>
-        <p>Potions can only have one of the following<br>See below...</p>
-        <dl>
-            <dt>Glow Stone</dt>
-            <dd>- can add to potion to make it stronger</dd>
-            <dt>Red Stone</dt>
-            <dd>- can add to potion to make it longer</dd>
-        </dl>
         <table>
             <caption>Special Items</caption>
             <colgroup>
@@ -80,6 +71,5 @@
         <div class="sticky-reference">
             <p>Scroll back up</p>
         </div>
-        <div id="bottom"></div>
     </body>
 </html>
