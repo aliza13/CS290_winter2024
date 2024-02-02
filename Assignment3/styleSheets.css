@@ -15,9 +15,22 @@ td {
     padding: 10px;
 }
 
-#potion-table-background-of-columns {
-    background-color:rgb(218, 226, 218);
+th {
+    background-color: rgb(66, 210, 80);
 }
+
+tr:nth-child(odd) {
+    background-color: rgb(218, 226, 218); /* Set the background color for odd rows */
+}
+
+tr:nth-child(even) {
+    background-color: white; /* Set the background color for even rows */
+}
+
+tfoot tr {
+    background-color: rgb(66, 210, 80) !important;
+    text-align: right;
+} 
 
 dl {
     font-variant: small-caps; /* all caps, looks cool!!*/
@@ -83,11 +96,13 @@ dl {
     align-items: center;
 }
 
-.nav-tab, .search-input, .search-button{
+.nav-tab {
     margin: 5px;
     padding: 5px;
+    display: flex;
     border: 2px solid rgb(50, 26, 73);
     border-radius: 6px; /* to make circular ish border */
+    white-space: nowrap; /* to make text with more than one word not wrap */
 }
 
 .nav-tab-link {
@@ -97,8 +112,24 @@ dl {
     text-decoration: none;
 }
 
+.search-input, .search-button {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    border: 2px solid rgb(50, 26, 73);
+    border-radius: 6px; /* to make circular ish border */
+    white-space: nowrap; /* to make text with more than one word not wrap */
+}
+
 .nav-search {
     display: flex;
     align-items: center; /* align items vertically in search bar */
-    margin-left: 30%;
+    margin-left: auto; /* To make search bar stay at the right */
+}
+
+/* To hide search bar when screen width is too small */
+@media (max-width: 600px) {
+    .nav-search {
+        display: none;
+    }
 }
