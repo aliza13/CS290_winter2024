@@ -6,5 +6,18 @@
     <body>
         <input type="checkbox" id="checkbox" name="checkbox" checked> 
         <button onclick="showAlert()">Show an alert.</button>
+        <div> 
+            <label for="name">What is your name? </label>
+            <input type="text" id="nameInput" name="name" placeholder="Type first name" maxlength="15" size="20">
+        </div>
+        <div>
+            <button id="submitButton" onclick="greetingUser()">Submit</button>
+        </div>
+        <div id="outputName"></div>
+        <div id="levelInput" style="display: none;">
+            <label for="numbers">Enter your levels for the day (separated by commas or spaces): </label>
+            <input type="text" id="userLevels" name="userLevels" placeholder="e.g., 104, 223, 346">
+            <button onclick="storeLevels()">Store Levels</button>
+        </div>
     </body>
 </html>
